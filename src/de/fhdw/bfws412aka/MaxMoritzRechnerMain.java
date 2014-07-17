@@ -15,7 +15,7 @@ public class MaxMoritzRechnerMain {
         do {
             switch (selection) {
                 case 'a':
-                    // here be code
+                    new Addierer().addiere(this);
                     break;
                 case 's':
                     // here be code
@@ -33,15 +33,10 @@ public class MaxMoritzRechnerMain {
                     } catch (IOException e) {
                         System.out.println("something went horribly wrong");
                     }
-                    System.out.println("MaxMoritzRechner - fuer Spitzbuben, die nicht kopfrechnen koennen");
-                    System.out.println("\na)\tAddieren");
-                    System.out.println("s)\tSubtrahieren");
-                    System.out.println("m)\tMultiplizieren");
-                    System.out.println("d)\tDividieren");
-                    System.out.println("e)\tGet the hell out of here!");
-                    System.out.print("\nAuswahl: ");
+                    showMenu();
                     break;
             }
+            System.out.print("\nAuswahl: ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {
                 selection = br.readLine().charAt(0);
@@ -51,5 +46,14 @@ public class MaxMoritzRechnerMain {
             }
         } while (selection != 'e');
         System.out.print("Farewell!");
+    }
+
+    public void showMenu() {
+        System.out.println("MaxMoritzRechner - für Spitzbuben, die nicht kopfrechnen können");
+        System.out.println("\na)\tAddieren");
+        System.out.println("s)\tSubtrahieren");
+        System.out.println("m)\tMultiplizieren");
+        System.out.println("d)\tDividieren");
+        System.out.println("e)\tGet the hell out of here!");
     }
 }
