@@ -18,7 +18,7 @@ public class MaxMoritzRechnerMain {
                     new Addierer().addiere(this);
                     break;
                 case 's':
-                    // here be code
+                    new Subtrahierer().subtrahiere(this);
                     break;
                 case 'm':
                     // here be code
