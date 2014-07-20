@@ -21,10 +21,10 @@ public class MaxMoritzRechnerMain {
                     new Subtrahierer().subtrahiere(this);
                     break;
                 case 'm':
-                    // here be code
+                    new Multiplizierer().multipliziere(this);
                     break;
                 case 'd':
-                    // here be code
+                    new Dividierer().dividiere(this);
                     break;
                 default:
                     try {
